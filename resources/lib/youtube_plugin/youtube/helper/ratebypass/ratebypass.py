@@ -3,7 +3,7 @@
     Copyright (C) 2012-2021 https://github.com/pytube/pytube/
     SPDX-License-Identifier: Unlicense
 
-    Copyright (C) 2021 plugin.video.youtube
+    Copyright (C) 2021 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.

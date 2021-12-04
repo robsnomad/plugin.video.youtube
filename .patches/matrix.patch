@@ -197,7 +197,7 @@ index 86cd25f..feab99e 100644
 -
 +<?xml version="1.0" ?>
 +<settings version="1">
-+    <section id="plugin.video.youtube">
++    <section id="plugin.video.youtubemusic">
 +        <category help="" id="general" label="30000">
 +            <group id="1">
 +                <setting help="" id="kodion.video.quality" label="30010" type="integer">
@@ -236,7 +236,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.subtitle.configure" label="30600" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/config/subtitles/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/config/subtitles/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -404,7 +404,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.video.quality.mpd.configure" label="30008" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/config/mpd/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/config/mpd/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -497,7 +497,7 @@ index 86cd25f..feab99e 100644
 +            <group id="4">
 +                <setting help="" id="kodion.install.inputstreamhelper" label="30623" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/inputstreamhelper/install/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/inputstreamhelper/install/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -720,7 +720,7 @@ index 86cd25f..feab99e 100644
 +            <group id="1">
 +                <setting help="" id="kodion.users.add" label="30661" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/users/add/?refresh=false)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/users/add/?refresh=false)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -728,7 +728,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.users.remove" label="30662" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/users/remove/?refresh=false)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/users/remove/?refresh=false)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -736,7 +736,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.users.rename" label="30663" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/users/rename/?refresh=false)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/users/rename/?refresh=false)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -744,7 +744,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.users.switch" label="30664" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/users/switch/?refresh=false)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/users/switch/?refresh=false)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -881,7 +881,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.http.listen.select" label="30644" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/config/listen_ip/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/config/listen_ip/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -918,7 +918,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.http.client.ip" label="30698" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/show_client_ip/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/show_client_ip/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -976,7 +976,7 @@ index 86cd25f..feab99e 100644
 +            <group id="1">
 +                <setting help="" id="kodion.maintain.clear.func" label="30555" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/function_cache/clear/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/function_cache/clear/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -984,7 +984,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.clear.data" label="30686" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/data_cache/clear/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/data_cache/clear/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -992,7 +992,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.clear.search" label="30556" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/search_cache/clear/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/search_cache/clear/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1000,7 +1000,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.clear.playback.history" label="30671" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/playback_history/clear/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/playback_history/clear/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1010,7 +1010,7 @@ index 86cd25f..feab99e 100644
 +            <group id="2">
 +                <setting help="" id="kodion.maintain.delete.func" label="30553" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/function_cache/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/function_cache/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1018,7 +1018,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.data" label="30685" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/data_cache/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/data_cache/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1026,7 +1026,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.search" label="30554" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/search_cache/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/search_cache/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1034,7 +1034,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.playback.history" label="30672" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/playback_history/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/playback_history/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1044,7 +1044,7 @@ index 86cd25f..feab99e 100644
 +            <group id="3">
 +                <setting help="" id="kodion.maintain.reset.accessmanager" label="30580" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/access_manager/reset/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/access_manager/reset/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1056,7 +1056,7 @@ index 86cd25f..feab99e 100644
 +            <group id="4">
 +                <setting help="" id="kodion.maintain.delete.settings" label="30559" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/settings_xml/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/settings_xml/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1066,7 +1066,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.api_keys" label="30641" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/api_keys/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/api_keys/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1074,7 +1074,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.access_manager" label="30642" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/access_manager/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/access_manager/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>
@@ -1082,7 +1082,7 @@ index 86cd25f..feab99e 100644
 +                </setting>
 +                <setting help="" id="kodion.maintain.delete.temp" label="30626" type="action">
 +                    <level>0</level>
-+                    <data>RunPlugin(plugin://plugin.video.youtube/maintain/temp_files/delete/)</data>
++                    <data>RunPlugin(plugin://plugin.video.youtubemusic/maintain/temp_files/delete/)</data>
 +                    <constraints>
 +                        <allowempty>true</allowempty>
 +                    </constraints>

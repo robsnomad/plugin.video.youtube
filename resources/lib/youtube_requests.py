@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2017-2019 plugin.video.youtube
+    Copyright (C) 2017-2019 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -20,9 +20,9 @@ def __get_core_components(addon_id=None):
     """
     provider = Provider()
     if addon_id is not None:
-        context = Context(params={'addon_id': addon_id}, plugin_id='plugin.video.youtube')
+        context = Context(params={'addon_id': addon_id}, plugin_id='plugin.video.youtubemusic')
     else:
-        context = Context(plugin_id='plugin.video.youtube')
+        context = Context(plugin_id='plugin.video.youtubemusic')
     client = provider.get_client(context=context)
 
     return provider, context, client

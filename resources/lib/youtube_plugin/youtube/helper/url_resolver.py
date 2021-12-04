@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2014-2016 bromix (plugin.video.youtube)
-    Copyright (C) 2016-2018 plugin.video.youtube
+    Copyright (C) 2014-2016 bromix (plugin.video.youtubemusic)
+    Copyright (C) 2016-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -19,7 +19,7 @@ import requests
 
 class AbstractResolver(object):
     def __init__(self):
-        self._verify = _Context(plugin_id='plugin.video.youtube').get_settings().verify_ssl()
+        self._verify = _Context(plugin_id='plugin.video.youtubemusic').get_settings().verify_ssl()
 
     def supports_url(self, url, url_components):
         raise NotImplementedError()

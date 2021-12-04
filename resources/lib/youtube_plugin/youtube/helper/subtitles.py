@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Copyright (C) 2017-2021 plugin.video.youtube
+    Copyright (C) 2017-2021 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -34,7 +34,7 @@ class Subtitles(object):
     LANG_CURR = 3
     LANG_CURR_NO_ASR = 4
 
-    BASE_PATH = 'special://temp/plugin.video.youtube/'
+    BASE_PATH = 'special://temp/plugin.video.youtubemusic/'
     SRT_FILE = ''.join([BASE_PATH, '%s.%s.srt'])
 
     def __init__(self, context, headers, video_id, captions):

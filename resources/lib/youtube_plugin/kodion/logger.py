@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2014-2016 bromix (plugin.video.youtube)
-    Copyright (C) 2016-2018 plugin.video.youtube
+    Copyright (C) 2014-2016 bromix (plugin.video.youtubemusic)
+    Copyright (C) 2016-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -20,7 +20,7 @@ FATAL = xbmc.LOGFATAL
 SEVERE = FATAL
 NONE = xbmc.LOGNONE
 
-_ADDON_ID = 'plugin.video.youtube'
+_ADDON_ID = 'plugin.video.youtubemusic'
 
 
 def log(text, log_level=DEBUG, addon_id=_ADDON_ID):

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2014-2016 bromix (plugin.video.youtube)
-    Copyright (C) 2016-2018 plugin.video.youtube
+    Copyright (C) 2014-2016 bromix (plugin.video.youtubemusic)
+    Copyright (C) 2016-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -13,7 +13,7 @@ from ... import kodion
 
 def _process_play_video(provider, context, re_match):
     """
-    plugin://plugin.video.youtube/?action=play_video&videoid=[ID]
+    plugin://plugin.video.youtubemusic/?action=play_video&videoid=[ID]
     """
     video_id = context.get_param('videoid', '')
     if not video_id:
@@ -29,8 +29,8 @@ def _process_play_video(provider, context, re_match):
 
 def _process_play_all(provider, context, re_match):
     """
-    plugin://plugin.video.youtube/?path=/root/video&action=play_all&playlist=PL8_6CHho8Tq4Iie-oNxb-g0ECxIhq3CxW
-    plugin://plugin.video.youtube/?action=play_all&playlist=PLZRRxQcaEjA5fgfW3a3Q0rzm6NgbmICtg&videoid=qmlYe2KS0-Y
+    plugin://plugin.video.youtubemusic/?path=/root/video&action=play_all&playlist=PL8_6CHho8Tq4Iie-oNxb-g0ECxIhq3CxW
+    plugin://plugin.video.youtubemusic/?action=play_all&playlist=PLZRRxQcaEjA5fgfW3a3Q0rzm6NgbmICtg&videoid=qmlYe2KS0-Y
     """
     playlist_id = context.get_param('playlist', '')
     if not playlist_id:

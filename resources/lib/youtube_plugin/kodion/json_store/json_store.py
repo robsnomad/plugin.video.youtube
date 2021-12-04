@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2018-2018 plugin.video.youtube
+    Copyright (C) 2018-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -25,7 +25,7 @@ except AttributeError:
 
 class JSONStore(object):
     def __init__(self, filename):
-        addon_id = 'plugin.video.youtube'
+        addon_id = 'plugin.video.youtubemusic'
         addon = xbmcaddon.Addon(addon_id)
 
         try:

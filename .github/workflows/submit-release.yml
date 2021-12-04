@@ -6,7 +6,7 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'anxdpanic/plugin.video.youtube'
+    if: github.repository == 'anxdpanic/plugin.video.youtubemusic'
 
     name: Submit Release
     runs-on: ubuntu-latest

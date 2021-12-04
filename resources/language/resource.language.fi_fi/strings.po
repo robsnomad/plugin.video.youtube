@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: YouTube
-# Addon id: plugin.video.youtube
+# Addon id: plugin.video.youtubemusic
 # Addon Provider: bromix
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2015-09-21 11:01+0000\n"
 "PO-Revision-Date: 2021-06-18 21:42+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
-"Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-video/plugin-video-youtube/fi_fi/>\n"
+"Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-video/plugin-video.youtubemusic/fi_fi/>\n"
 "Language: fi_fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

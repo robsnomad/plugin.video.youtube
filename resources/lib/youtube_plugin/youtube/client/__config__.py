@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2017-2018 plugin.video.youtube
+    Copyright (C) 2017-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -15,7 +15,7 @@ from ... import key_sets
 
 DEFAULT_SWITCH = 1
 
-__context = __Context(plugin_id='plugin.video.youtube')
+__context = __Context(plugin_id='plugin.video.youtubemusic')
 __settings = __context.get_settings()
 
 
@@ -105,7 +105,7 @@ class APICheck(object):
             self._json_am['access_manager']['users'][user]['last_key_hash'] = updated_hash
             self._am_jstore.save(self._json_am)
             self._context.log_debug('API key set changed: Signing out')
-            self._context.execute('RunPlugin(plugin://plugin.video.youtube/sign/out/?confirmed=true)')
+            self._context.execute('RunPlugin(plugin://plugin.video.youtubemusic/sign/out/?confirmed=true)')
         else:
             self._context.log_debug('User: |%s| Using API key set: |%s|' % (user, switch))
 

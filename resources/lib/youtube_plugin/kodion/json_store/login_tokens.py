@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2018-2018 plugin.video.youtube
+    Copyright (C) 2018-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -30,7 +30,7 @@ class LoginTokenStore(JSONStore):
         if 'current_user' not in data['access_manager']:
             data['access_manager']['current_user'] = '0'
         if 'last_origin' not in data['access_manager']:
-            data['access_manager']['last_origin'] = 'plugin.video.youtube'
+            data['access_manager']['last_origin'] = 'plugin.video.youtubemusic'
         if 'developers' not in data['access_manager']:
             data['access_manager']['developers'] = dict()
 

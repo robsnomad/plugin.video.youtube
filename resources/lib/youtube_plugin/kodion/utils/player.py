@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2018-2018 plugin.video.youtube
+    Copyright (C) 2018-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -107,7 +107,7 @@ class PlaybackMonitorThread(threading.Thread):
 
         report_url = playback_stats.get('watchtime_url', '')
 
-        plugin_play_path = 'plugin://plugin.video.youtube/play/'
+        plugin_play_path = 'plugin://plugin.video.youtubemusic/play/'
         video_id_param = 'video_id=%s' % self.video_id
 
         notification_sent = False

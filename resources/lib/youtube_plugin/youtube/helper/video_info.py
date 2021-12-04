@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2014-2016 bromix (plugin.video.youtube)
-    Copyright (C) 2016-2018 plugin.video.youtube
+    Copyright (C) 2014-2016 bromix (plugin.video.youtubemusic)
+    Copyright (C) 2016-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -1148,7 +1148,7 @@ class VideoInfo(object):
 
             return data_copy
 
-        basepath = 'special://temp/plugin.video.youtube/'
+        basepath = 'special://temp/plugin.video.youtubemusic/'
         if not make_dirs(basepath):
             self._context.log_debug('Failed to create directories: %s' % basepath)
             return None

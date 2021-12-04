@@ -7,7 +7,7 @@ on:
 jobs:
 
   close-translation-prs:
-    if: github.actor != 'weblate' && github.actor != 'anxdpanic' && github.repository == 'anxdpanic/plugin.video.youtube'
+    if: github.actor != 'weblate' && github.actor != 'anxdpanic' && github.repository == 'anxdpanic/plugin.video.youtubemusic'
 
     name: Close Translation Pull Requests
     runs-on: ubuntu-latest

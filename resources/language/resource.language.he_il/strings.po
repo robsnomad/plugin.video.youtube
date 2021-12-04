@@ -1,10 +1,10 @@
 # Kodi Media Center language file
 # Addon Name: YouTube
-# Addon id: plugin.video.youtube
+# Addon id: plugin.video.youtubemusic
 # Addon Provider: bromix
 msgid ""
 msgstr ""
-"Project-Id-Version: plugin.video.youtube\n"
+"Project-Id-Version: plugin.video.youtubemusic\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: 2015-09-21 11:01+0000\n"
 "PO-Revision-Date: 2017-11-13 09:47+0200\n"

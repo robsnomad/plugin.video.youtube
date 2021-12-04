@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2014-2016 bromix (plugin.video.youtube)
-    Copyright (C) 2016-2018 plugin.video.youtube
+    Copyright (C) 2014-2016 bromix (plugin.video.youtubemusic)
+    Copyright (C) 2016-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -24,7 +24,7 @@ class AccessManager(object):
         self._jstore = LoginTokenStore()
         self._json = self._jstore.get_data()
         self._user = self._json['access_manager'].get('current_user', '0')
-        self._last_origin = self._json['access_manager'].get('last_origin', 'plugin.video.youtube')
+        self._last_origin = self._json['access_manager'].get('last_origin', 'plugin.video.youtubemusic')
 
     def get_current_user_id(self):
         """

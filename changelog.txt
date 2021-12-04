@@ -118,7 +118,7 @@
 [add] 'Play (Ask for quality)' context menu
 [add] search by channel or playlist id
 [add] hide_folders, hide_playlists, hide_search, and hide_live to /channel/<channel_id>/ end-point
-    - ie. plugin://plugin.video.youtube/channel/UC4PooiX37Pld1T8J5SYT-SQ/?hide_folders=true will hide all folders(Playlists, Search, and Live) in the channel listing
+    - ie. plugin://plugin.video.youtubemusic/channel/UC4PooiX37Pld1T8J5SYT-SQ/?hide_folders=true will hide all folders(Playlists, Search, and Live) in the channel listing
 [fix] playback for some videos (ie. music videos)
 [fix] playback of some videos with no adaptive video streams
 [fix] don't update watch history when incognito/screensaver/live |contrib: regseb|
@@ -361,7 +361,7 @@
 [add] youtube_registration module, register developer keys and use them by appending an addon_id=<addon_id> parameter to youtube add-on plugin urls
 [add] screensaver=true parameter to /play route - no suggested videos, no post play events, don't ask for quality
 [add] play route for channel live streams
-    - plugin://plugin.video.youtube/play/?channel_id=UCLA_DiR1FfKNvjuUpBHmylQ&live=1
+    - plugin://plugin.video.youtubemusic/play/?channel_id=UCLA_DiR1FfKNvjuUpBHmylQ&live=1
 [add] Purchases
     - requires Kodi 18
     - requires inputstream.adaptive >= 2.2.12
@@ -392,7 +392,7 @@
 5.5.0
 [add] Saved Playlists
 [add] allow developers to use their own api key
-    - xbmcgui.Window(10000).setProperty('plugin.video.youtube-configs', json.dumps({"origin": ADDON_ID, "main": {"system": SYSTEM_NAME, "key": API_KEY[, "id": CLIENT_ID, "secret": CLIENT_SECRET]}}))
+    - xbmcgui.Window(10000).setProperty('plugin.video.youtubemusic-configs', json.dumps({"origin": ADDON_ID, "main": {"system": SYSTEM_NAME, "key": API_KEY[, "id": CLIENT_ID, "secret": CLIENT_SECRET]}}))
 [add] Audio only: Settings -> General
 [add] Age gate enforcement: Settings -> General
 [add] Quick search and Quick search (Incognito)
@@ -435,7 +435,7 @@
 5.4.3
 [add] mpeg-dash support for live content (requires inputstream.adaptive >= 2.0.12)
 [add] add route to update api keys
-    plugin://plugin.video.youtube/api/update/?enable=true&client_id=<client_id>&client_secret=<client_secret>&api_key=<api_key>
+    plugin://plugin.video.youtubemusic/api/update/?enable=true&client_id=<client_id>&client_secret=<client_secret>&api_key=<api_key>
 [fix/upd] refactor subtitles ** subtitles setting will be reset
 [fix/upd] add My Subscriptions (Filtered) to dual login requirements
 [fix/upd] only show Browse Channels when logged in
@@ -470,9 +470,9 @@
 [add] Automatic subtitles [Uukrull]
 [add] My Subscriptions (Filtered) - whitelist/blacklist version of My Subscriptions [chhe]
 [add] module extension point:
-        add-ons can now add plugin.video.youtube dependency and resolve youtube video id's or make v3 api requests using the youtube plugin,
+        add-ons can now add plugin.video.youtubemusic dependency and resolve youtube video id's or make v3 api requests using the youtube plugin,
         """ <addon.xml>
-        <import addon="plugin.video.youtube"/>
+        <import addon="plugin.video.youtubemusic"/>
         """
         """ <example.py>
         import youtube_resolver
@@ -630,7 +630,7 @@ FIX: add 'Play all' for playlist (again)
 5.1.1 (2015-05-10)
 ADD: 'More...' in context menu to provide more items
 ADD: show deprecation warning of old plugin calls starting with Isengard
-ADD: EndPoint: 'plugin://plugin.video.youtube/search/?q=[URL_ENC_TEXT]'
+ADD: EndPoint: 'plugin://plugin.video.youtubemusic/search/?q=[URL_ENC_TEXT]'
 ADD: API Key for each major version of KODI
 UPD: Ukrainian (thx 2 Dukobpa3)
 UPD: Russian (thx 2 BytEvil)
@@ -663,7 +663,7 @@ FIX: show seconds (runtime) in Gotham
 
 5.0.9 (2015-03-14)
 ADD: 'duration' optimized for KODI 15.X (Isengard)
-ADD: EndPoint for listing the videos of a playlist: "plugin://plugin.video.youtube/playlist/<PLAYLIST_ID>/"
+ADD: EndPoint for listing the videos of a playlist: "plugin://plugin.video.youtubemusic/playlist/<PLAYLIST_ID>/"
 UPD: optimized client-/server transfer (use gzip)
 
 5.0.8 (2015-03-05)
@@ -754,7 +754,7 @@ ADD: show confirmation before remove a video or deleting a playlist
 ADD: rename your playlists
 ADD: setup default view modes (default and videos)
 ADD: setup correct language and region for YouTube
-ADD: support for old YouTube url calls (plugin://plugin.video.youtube/?action=play_video&videoid=[ID])
+ADD: support for old YouTube url calls (plugin://plugin.video.youtubemusic/?action=play_video&videoid=[ID])
 UPD: new icons
 UPD: reorganized context menu
 UPD: some minor tests

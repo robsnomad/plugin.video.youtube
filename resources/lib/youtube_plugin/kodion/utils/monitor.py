@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2018-2018 plugin.video.youtube
+    Copyright (C) 2018-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -31,7 +31,7 @@ class YouTubeMonitor(xbmc.Monitor):
 
     # noinspection PyUnusedLocal,PyMissingConstructor
     def __init__(self, *args, **kwargs):
-        self.addon_id = 'plugin.video.youtube'
+        self.addon_id = 'plugin.video.youtubemusic'
         addon = xbmcaddon.Addon(self.addon_id)
         self._whitelist = addon.getSetting('kodion.http.ip.whitelist')
         self._httpd_port = int(addon.getSetting('kodion.mpd.proxy.port'))
@@ -47,7 +47,7 @@ class YouTubeMonitor(xbmc.Monitor):
         del addon
 
     def onNotification(self, sender, method, data):
-        if sender == 'plugin.video.youtube' and method.endswith('.check_settings'):
+        if sender == 'plugin.video.youtubemusic' and method.endswith('.check_settings'):
             data = json.loads(data)
             data = json.loads(unquote(data[0]))
             logger.log_debug('onNotification: |check_settings| -> |%s|' % json.dumps(data))
@@ -85,7 +85,7 @@ class YouTubeMonitor(xbmc.Monitor):
             elif not self.use_httpd() and self.httpd:
                 self.shutdown_httpd()
 
-        elif sender == 'plugin.video.youtube':
+        elif sender == 'plugin.video.youtubemusic':
             logger.log_debug('onNotification: |unknown method|')
 
     def use_httpd(self):

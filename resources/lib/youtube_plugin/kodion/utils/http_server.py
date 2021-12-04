@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-    Copyright (C) 2018-2018 plugin.video.youtube
+    Copyright (C) 2018-2018 plugin.video.youtubemusic
 
     SPDX-License-Identifier: GPL-2.0-only
     See LICENSES/GPL-2.0-only for more information.
@@ -32,7 +32,7 @@ except AttributeError:
 class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def __init__(self, request, client_address, server):
-        self.addon_id = 'plugin.video.youtube'
+        self.addon_id = 'plugin.video.youtubemusic'
         addon = xbmcaddon.Addon(self.addon_id)
         whitelist_ips = addon.getSetting('kodion.http.ip.whitelist')
         whitelist_ips = ''.join(whitelist_ips.split())
@@ -63,7 +63,7 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     # noinspection PyPep8Naming
     def do_GET(self):
-        addon = xbmcaddon.Addon('plugin.video.youtube')
+        addon = xbmcaddon.Addon('plugin.video.youtubemusic')
         dash_proxy_enabled = addon.getSetting('kodion.mpd.videos') == 'true' and addon.getSetting('kodion.video.quality.mpd') == 'true'
         api_config_enabled = addon.getSetting('youtube.api.config.page') == 'true'
 
@@ -108,7 +108,7 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 for chunk in self.get_chunks(html):
                     self.wfile.write(chunk)
             elif api_config_enabled and self.path.startswith('/api_submit'):
-                addon = xbmcaddon.Addon('plugin.video.youtube')
+                addon = xbmcaddon.Addon('plugin.video.youtubemusic')
                 i18n = addon.getLocalizedString
                 xbmc.executebuiltin('Dialog.Close(addonsettings,true)')
                 old_api_key = addon.getSetting('youtube.api.key')
@@ -168,7 +168,7 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         if not self.connection_allowed():
             self.send_error(403)
         else:
-            addon = xbmcaddon.Addon('plugin.video.youtube')
+            addon = xbmcaddon.Addon('plugin.video.youtubemusic')
             dash_proxy_enabled = addon.getSetting('kodion.mpd.videos') == 'true' and addon.getSetting('kodion.video.quality.mpd') == 'true'
             if dash_proxy_enabled and self.path.endswith('.mpd'):
                 file_path = os.path.join(self.base_path, self.path.strip('/').strip('\\'))
@@ -190,8 +190,8 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         if not self.connection_allowed():
             self.send_error(403)
         elif self.path.startswith('/widevine'):
-            license_url = xbmcgui.Window(10000).getProperty('plugin.video.youtube-license_url')
-            license_token = xbmcgui.Window(10000).getProperty('plugin.video.youtube-license_token')
+            license_url = xbmcgui.Window(10000).getProperty('plugin.video.youtubemusic-license_url')
+            license_token = xbmcgui.Window(10000).getProperty('plugin.video.youtubemusic-license_token')
 
             if not license_url:
                 self.send_error(404)
@@ -262,7 +262,7 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     @staticmethod
     def api_config_page():
-        addon = xbmcaddon.Addon('plugin.video.youtube')
+        addon = xbmcaddon.Addon('plugin.video.youtubemusic')
         i18n = addon.getLocalizedString
         api_key = addon.getSetting('youtube.api.key')
         api_id = addon.getSetting('youtube.api.id')
@@ -276,7 +276,7 @@ class YouTubeRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     @staticmethod
     def api_submit_page(updated_keys, enabled, footer):
-        addon = xbmcaddon.Addon('plugin.video.youtube')
+        addon = xbmcaddon.Addon('plugin.video.youtubemusic')
         i18n = addon.getLocalizedString
         html = Pages().api_submit.get('html')
         css = Pages().api_submit.get('css')
@@ -457,7 +457,7 @@ class Pages(object):
 
 
 def get_http_server(address=None, port=None):
-    addon_id = 'plugin.video.youtube'
+    addon_id = 'plugin.video.youtubemusic'
     addon = xbmcaddon.Addon(addon_id)
     address = address if address else addon.getSetting('kodion.http.listen')
     address = address if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', address) else '0.0.0.0'
@@ -474,7 +474,7 @@ def get_http_server(address=None, port=None):
 
 
 def is_httpd_live(address=None, port=None):
-    addon_id = 'plugin.video.youtube'
+    addon_id = 'plugin.video.youtubemusic'
     addon = xbmcaddon.Addon(addon_id)
     address = address if address else addon.getSetting('kodion.http.listen')
     address = '127.0.0.1' if address == '0.0.0.0' else address
@@ -493,7 +493,7 @@ def is_httpd_live(address=None, port=None):
 
 
 def get_client_ip_address(address=None, port=None):
-    addon_id = 'plugin.video.youtube'
+    addon_id = 'plugin.video.youtubemusic'
     addon = xbmcaddon.Addon(addon_id)
     address = address if address else addon.getSetting('kodion.http.listen')
     address = '127.0.0.1' if address == '0.0.0.0' else address
