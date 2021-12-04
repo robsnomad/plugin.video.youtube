@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.18" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtubemusic" name="YouTube Music" version="6.8.18" provider-name="anxdpanic, bromix, rs">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -25,7 +25,7 @@
         <license>GPL-2.0-only</license>
         <forum>https://ytaddon.panicked.xyz/forum</forum>
         <website>https://www.youtube.com</website>
-        <source>https://github.com/anxdpanic/plugin.video.youtube</source>
+        <source>https://github.com/robsnomad/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="bg_BG">Добавка за YouTube</summary>
         <summary lang="cs_CZ">Plugin pro YouTube</summary>
